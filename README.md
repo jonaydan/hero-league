@@ -1,125 +1,219 @@
-# 🦸 Heroes League - Ligue des Super-Héros
+# 🦸 Heros League™ - Super-héros à votre service 24/7
 
-Une application web interactive pour découvrir et explorer les super-héros les plus célèbres.
+![Version](https://img.shields.io/badge/version-1.1-blue)
+![SEO](https://img.shields.io/badge/SEO-Optimized-green)
+![License](https://img.shields.io/badge/license-MIT-orange)
 
 ## 📋 Description
 
-Heroes League est une application web moderne qui présente une galerie de super-héros avec leurs informations, pouvoirs et caractéristiques. L'application offre une interface utilisateur élégante et responsive.
+**Heros League™** est une plateforme web permettant de louer des super-héros pour toutes vos urgences. Intervention rapide, héros vérifiés, disponibilité 24/7.
 
 ## ✨ Fonctionnalités
 
-- 🎨 **Design moderne** - Interface utilisateur attrayante avec dégradés et animations
-- 📱 **Responsive** - S'adapte à tous les écrans (mobile, tablette, desktop)
-- 🦸‍♂️ **Galerie de héros** - Affichage des héros en grille avec cartes interactives
-- ⚡ **Animations** - Effets de survol et transitions fluides
-- 🎯 **Navigation fluide** - Défilement doux vers les sections
+- 🦸‍♂️ **Galerie de 6 super-héros** avec leurs pouvoirs et spécialités
+- 🚀 **Design responsive** (Mobile, Tablette, Desktop)
+- ⚡ **Animations fluides** et effets de survol
+- 📧 **Formulaire de contact** pour urgences
+- 🎨 **Police Satoshi** via Fontshare API
+- 🔍 **SEO optimisé** avec microdonnées Schema.org
 
-## 🚀 Technologies Utilisées
+## 🛠️ Technologies
 
-- **HTML5** - Structure de la page
-- **CSS3** - Styles, animations, responsive design
-- **JavaScript (Vanilla)** - Logique et interactivité
-- **Grid CSS** - Mise en page responsive
+- **HTML5** - Structure sémantique avec microdonnées
+- **CSS3** - Design moderne et animations
+- **JavaScript (Vanilla)** - Interactions dynamiques
+- **Schema.org** - Microdonnées pour le SEO
+- **Open Graph** - Partage sur réseaux sociaux
 
-## 📁 Structure du Projet
+## 📊 Optimisations SEO
+
+### ✅ Implémentées
+
+1. **Balises Meta complètes**
+   - Title, Description, Keywords
+   - Open Graph (Facebook, Twitter)
+   
+2. **Microdonnées Schema.org**
+   - `Organization` - Entreprise Heros League
+   - `Service` - Services proposés (urgences domestiques, sécurité)
+   - `Person` - Chaque héros avec attributs (nom, alternateName, description, jobTitle)
+   - `ContactPage` - Formulaire de contact
+   - `ItemList` - Liste des héros disponibles
+   
+3. **Accessibilité ARIA**
+   - Labels sur tous les champs de formulaire
+   - Rôles sémantiques (`navigation`, `banner`, `contentinfo`)
+   - Attributs `aria-label` descriptifs
+   - Attribut `role` sur les sections
+
+4. **Structure HTML5 sémantique**
+   - `<header>`, `<main>`, `<section>`, `<footer>`
+   - Navigation avec `role="navigation"`
+   - Images avec attributs `alt` descriptifs
+   - Attribut `loading="lazy"` sur les images
+   
+5. **Fichiers SEO**
+   - `robots.txt` - Instructions pour les crawlers
+   - `sitemap.xml` - Plan du site XML
+   
+6. **Performance**
+   - Images en lazy loading
+   - CSS optimisé sans redondance
+   - JavaScript modulaire et commenté
+   - Police chargée via API Fontshare
+
+## 📁 Structure du projet
 
 ```
 heros-league/
-│
-├── index.html          # Page d'accueil
+├── index.html          # Page principale (SEO optimisé)
+├── robots.txt          # Instructions pour robots
+├── sitemap.xml         # Plan du site
+├── CAHIER_DES_CHARGES.md  # Documentation complète
 ├── css/
-│   └── style.css       # Feuille de style
-│
+│   ├── style.css       # Styles principaux
+│   └── fonts.css       # Configuration polices
 ├── js/
-│   └── script.js       # JavaScript
-│
-├── ressources/         # Dossier pour les images/maquettes
-│   ├── home.png        # Maquette desktop
-│   ├── header.png      # Maquette header
-│   ├── hero1.jpg       # Exemple d'image de héros
-│   └── favicon.ico     # Icône du site
-│
+│   └── script.js       # Logique + microdonnées
+├── ressources/
+│   ├── images/         # 11 images PNG (héros + témoignages)
+│   ├── textes.txt      # Contenus du projet
+│   └── *.png           # 9 maquettes de design
 └── README.md           # Ce fichier
 ```
 
-## 🎮 Héros Disponibles
+## 🚀 Installation
 
-1. **Iron Man** - Génie, milliardaire, philanthrope
-2. **Spider-Man** - L'homme araignée amical du quartier
-3. **Wonder Woman** - Princesse guerrière d'Amazonie
-4. **Batman** - Le chevalier noir de Gotham
-5. **Captain America** - Le premier Avenger
-6. **Black Widow** - Espionne et combattante d'élite
-
-## 🛠️ Installation
-
-1. **Cloner ou télécharger le projet**
-   ```bash
-   git clone <url-du-repo>
-   ```
-
-2. **Ouvrir le fichier `index.html`**
-   - Double-cliquez sur le fichier
-   - Ou faites un clic droit → "Ouvrir avec" → Votre navigateur
-
-3. **Aucune dépendance** - Le projet fonctionne sans installation !
-
-## 💻 Utilisation
-
-- **Navigation** : Utilisez le menu pour naviguer entre les sections
-- **Bouton Explorer** : Cliquez pour accéder directement aux héros
-- **Cartes de héros** : Cliquez sur une carte pour voir plus d'informations
-
-## 🎨 Personnalisation
-
-### Ajouter un nouveau héros
-
-Dans `js/script.js`, ajoutez un objet dans le tableau `heroes` :
-
-```javascript
-{
-    id: 7,
-    name: "Nom du Héros",
-    realName: "Identité Secrète",
-    description: "Description du héros",
-    powers: "Liste des pouvoirs",
-    image: "URL de l'image"
-}
+1. **Cloner le dépôt**
+```bash
+git clone https://github.com/jonaydan/hero-league.git
+cd hero-league
 ```
 
-### Modifier les couleurs
+2. **Ouvrir dans un navigateur**
+```bash
+# Windows
+start index.html
 
-Dans `css/style.css`, modifiez les dégradés :
+# macOS
+open index.html
 
-```css
-background: linear-gradient(135deg, #COULEUR1 0%, #COULEUR2 100%);
+# Linux
+xdg-open index.html
 ```
+
+3. **Aucune dépendance** - Le projet fonctionne directement !
+
+## 🎯 Héros disponibles
+
+| Héros | Spécialité | Pouvoirs |
+|-------|-----------|----------|
+| **Catastrophic** | Force destructrice | Manipulation de l'énergie |
+| **Carotte Woman** | Vision nocturne | Régénération, super santé |
+| **Ultraquenarde** | Vol supersonique | Résistance aquatique |
+| **Poulpy** | Maître des océans | 8 tentacules, camouflage |
+| **Oran Wu-Tang Clan** | Arts martiaux | Agilité suprême |
+| **Superime** | Héros suprême | Force, vol, invulnérabilité |
+
+## 📈 Prochaines étapes
+
+### Phase 2 - Contenu
+- [ ] Intégrer les textes de `ressources/textes.txt`
+- [ ] Ajouter section témoignages (4 images disponibles)
+- [ ] Utiliser l'image `hero-banner.png` dans la section hero
+
+### Phase 3 - Fonctionnalités
+- [ ] Backend Node.js pour formulaire
+- [ ] Système de réservation de héros
+- [ ] Espace client avec authentification
+- [ ] Notifications par email
+
+### Phase 4 - SEO avancé
+- [ ] JSON-LD structuré pour Rich Snippets
+- [ ] FAQ avec microdonnées
+- [ ] Breadcrumbs (fil d'Ariane)
+- [ ] Articles de blog SEO-friendly
+
+## 🔍 Tests SEO
+
+### Validation Schema.org
+```
+https://search.google.com/test/rich-results
+```
+Colle l'URL ou le code HTML pour tester les microdonnées.
+
+### Validation HTML
+```
+https://validator.w3.org/
+```
+Vérifie que le code HTML est valide W3C.
+
+### Validation CSS
+```
+https://jigsaw.w3.org/css-validator/
+```
+
+### PageSpeed Insights
+```
+https://pagespeed.web.dev/
+```
+Teste la performance et les Core Web Vitals.
+
+### Lighthouse (Chrome DevTools)
+1. Ouvre Chrome DevTools (F12)
+2. Onglet "Lighthouse"
+3. Lance l'audit (Performance, SEO, Accessibility)
 
 ## 📱 Responsive Design
 
-L'application s'adapte automatiquement :
-- **Desktop** : Grille de 3 colonnes
-- **Tablette** : Grille de 2 colonnes
-- **Mobile** : Grille de 1 colonne
+| Taille | Breakpoint | Layout |
+|--------|-----------|--------|
+| Desktop | > 768px | 3 colonnes |
+| Tablette | 481-768px | 2 colonnes |
+| Mobile | ≤ 480px | 1 colonne |
 
-## 🔮 Améliorations Futures
+## 💡 Conseils SEO appliqués
 
-- [ ] Système de recherche de héros
-- [ ] Filtrage par univers (Marvel, DC, etc.)
-- [ ] Mode sombre/clair
-- [ ] Favoris avec localStorage
-- [ ] Formulaire d'ajout de héros personnalisés
-- [ ] API pour récupérer de vrais héros
+1. **Mots-clés ciblés** :
+   - super-héros, urgence, héros à louer, service héroïque
+   - intervention rapide, sécurité publique
 
-## 👨‍💻 Auteur
+2. **Hiérarchie des titres** :
+   - `<h1>` - Titre principal unique
+   - `<h2>` - Titres de sections
+   - `<h3>` - Sous-titres (noms des héros)
 
-**Flow**  
-Date : 11 novembre 2025
+3. **Alt text descriptifs** :
+   - Format : "Nom du héros - Description courte"
+   - Exemple : "Catastrophic - Héros mystérieux aux pouvoirs dévastateurs"
+
+4. **URLs propres** :
+   - Utilisez des ancres claires : `#services`, `#heros`, `#contact`
+
+5. **Temps de chargement** :
+   - Lazy loading sur les images
+   - CSS minifié (pour production)
+   - Police optimisée via API
+
+## 👤 Auteur
+
+**Flow (barna)** - Développeur Web Full Stack
+- GitHub: [@jonaydan](https://github.com/jonaydan)
+- Projet: Formation développement web - O-clock
 
 ## 📄 Licence
 
-Ce projet est libre d'utilisation pour des fins éducatives.
+Ce projet est sous licence MIT - libre d'utilisation pour fins éducatives.
+
+## 🙏 Remerciements
+
+- **O-clock Falun** - Ressources du projet (images, maquettes)
+- **Fontshare** - Police Satoshi gratuite
+- **Schema.org** - Standards de microdonnées
+- **MDN Web Docs** - Documentation HTML/CSS/JS
 
 ---
 
-⭐ N'hésitez pas à donner une étoile si vous aimez ce projet !
+⭐ **Heros League™** - Votre sécurité, notre mission ! 🦸‍♀️
+
+*Besoin d'un héros ? Appelez-nous 24/7 !*

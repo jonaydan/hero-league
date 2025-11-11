@@ -1,53 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heroes League - Ligue des Super-Héros</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="ressources/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Heros League™ : Louez des super-héros pour toutes vos urgences ! Services rapides, héros vérifiés, disponibilité 24/7.">
+  <meta name="keywords" content="super-héros, urgence, héros à louer, service héroïque">
+  <title>Heros League™ | Super-héros à votre service 24/7</title>
+
+  <!-- Police Satoshi -->
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./ressources/favicon.ico" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Balises Open Graph (pour les réseaux sociaux) -->
+  <meta property="og:title" content="Heros League™ - Super-héros pour vos urgences">
+  <meta property="og:description" content="Besoin d'un super-héros ? Heros League propose des interventions rapides et professionnelles.">
+  <meta property="og:image" content="./ressources/home.png">
+  <meta property="og:url" content="https://ton-site.com">
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>🦸 Heroes League</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#heroes">Héros</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body itemscope itemtype="https://schema.org/Organization">
+  <!-- Métadonnées cachées pour l'organisation -->
+  <meta itemprop="name" content="Heros League">
+  <meta itemprop="description" content="Service de location de super-héros disponible 24/7">
+  <meta itemprop="url" content="https://ton-site.com">
+  
+  <!-- Header avec menu fixe -->
+  <header class="header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+      <div class="logo">
+        <a href="#accueil" itemprop="url">
+          <span itemprop="name">Heros League™</span>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#heros">Nos Héros</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Section principale -->
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h2>Bienvenue dans la Ligue des Super-Héros</h2>
-                <p>Découvrez les plus grands héros de tous les temps</p>
-                <button class="cta-button">Explorer</button>
-            </div>
-        </section>
+  <!-- Section Hero (pleine hauteur) -->
+  <section id="accueil" class="hero" role="banner">
+    <div class="hero-content">
+      <h1>Des super-héros <span>à votre service</span></h1>
+      <p>Intervention rapide, 24h/24 et 7j/7</p>
+      <a href="#contact" class="btn" role="button" aria-label="Contacter un héros en urgence">Appel d'urgence</a>
+    </div>
+  </section>
 
-        <!-- Section des héros -->
-        <section id="heroes" class="heroes-section">
-            <h2>Nos Héros</h2>
-            <div id="heroes-container" class="heroes-grid">
-                <!-- Les cartes de héros seront ajoutées ici via JavaScript -->
-            </div>
-        </section>
-    </main>
+  <!-- Section Services avec microdonnées Schema.org -->
+  <section id="services" class="services" itemscope itemtype="https://schema.org/Service">
+    <h2 itemprop="name">Nos Services</h2>
+    <div class="service-list">
+      <div class="service-card" itemscope itemtype="https://schema.org/Service">
+        <h3 itemprop="name">Urgences domestiques</h3>
+        <p itemprop="description">Débouchage de canalisations, réparation de toits, etc.</p>
+        <meta itemprop="serviceType" content="Urgence domestique">
+      </div>
+      <div class="service-card" itemscope itemtype="https://schema.org/Service">
+        <h3 itemprop="name">Sécurité publique</h3>
+        <p itemprop="description">Protection contre les méchants, patrouilles de quartier.</p>
+        <meta itemprop="serviceType" content="Sécurité publique">
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Heroes League. Tous droits réservés.</p>
-    </footer>
+  <!-- Section Héros avec microdonnées Schema.org -->
+  <section id="heros" class="heros" itemscope itemtype="https://schema.org/ItemList">
+    <h2 itemprop="name">Nos Héros Disponibles</h2>
+    <meta itemprop="description" content="Liste de super-héros disponibles 24/7 pour vos urgences">
+    <div class="hero-grid">
+      <!-- Les héros seront générés dynamiquement avec microdonnées via JavaScript -->
+    </div>
+    <a href="#contact" class="btn">Voir plus de héros</a>
+  </section>
 
-    <script src="js/script.js"></script>
+  <!-- Section Contact avec microdonnées -->
+  <section id="contact" class="contact" itemscope itemtype="https://schema.org/ContactPage">
+    <h2 itemprop="name">Besoin d'aide ?</h2>
+    <form class="contact-form" role="form" aria-label="Formulaire de contact d'urgence">
+      <input type="text" 
+             placeholder="Votre nom" 
+             aria-label="Nom complet" 
+             name="name"
+             required>
+      <input type="email" 
+             placeholder="Votre email" 
+             aria-label="Adresse email" 
+             name="email"
+             required>
+      <textarea placeholder="Décrivez votre urgence" 
+                aria-label="Description de l'urgence" 
+                name="message"
+                required></textarea>
+      <button type="submit" class="btn" aria-label="Envoyer la demande d'urgence">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+    <div class="footer-links">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#heros">Héros</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p itemprop="copyrightNotice">&copy; 2025 Heros League™. Tous droits réservés.</p>
+    <meta itemprop="copyrightYear" content="2025">
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
 </body>
 </html>

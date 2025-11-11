@@ -1,0 +1,13 @@
+# robots.txt pour Heros League
+# Indique aux moteurs de recherche comment explorer le site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ton-site.com/sitemap.xml
+
+# Empêcher l'indexation des ressources
+Disallow: /ressources/
+Disallow: /css/
+Disallow: /js/
