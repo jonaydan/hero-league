@@ -189,6 +189,20 @@ body {
   line-height: 1.8;
 }
 
+.service-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.service-link:hover {
+  color: #333;
+  transform: translateX(5px);
+}
+
 /* Section Héros */
 .heros {
   padding: 5rem 2rem;
@@ -352,6 +366,80 @@ body {
 .contact-form .btn {
   width: 100%;
   margin-top: 1rem;
+}
+
+/* Section Blog / Conseils */
+.blog-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: white;
+}
+
+.blog-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.blog-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #ffd700;
+  border-radius: 2px;
+}
+
+.blog-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffd700;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.blog-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.blog-card p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.blog-link {
+  display: inline-block;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.blog-link:hover {
+  color: #333;
+  transform: translateX(5px);
 }
 
 /* Footer */
