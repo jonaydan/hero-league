@@ -1,0 +1,26 @@
+{
+  "name": "Heros League - Super-héros à votre service 24/7",
+  "short_name": "Heros League",
+  "description": "Louez des super-héros pour toutes vos urgences. Services rapides, héros vérifiés, disponibilité 24/7.",
+  "start_url": "/hero-league/",
+  "scope": "/hero-league/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#ff6b35",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "ressources/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "ressources/home.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "utilities"],
+  "lang": "fr-FR"
+}

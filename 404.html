@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>404 - Page non trouvée | Heros League™</title>
+  
+  <!-- Police Satoshi -->
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.min.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./ressources/favicon.ico" type="image/x-icon">
+  
+  <style>
+    .error-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    }
+    
+    .error-code {
+      font-size: 8rem;
+      font-weight: 700;
+      color: #ff6b35;
+      margin: 0;
+      line-height: 1;
+      text-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+    }
+    
+    .error-title {
+      font-size: 2rem;
+      color: #ffffff;
+      margin: 1rem 0;
+    }
+    
+    .error-message {
+      font-size: 1.2rem;
+      color: #999;
+      max-width: 500px;
+      margin: 1rem auto 2rem;
+    }
+    
+    .error-hero {
+      font-size: 5rem;
+      margin: 1rem 0;
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    
+    .error-btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: #ff6b35;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin: 0.5rem;
+    }
+    
+    .error-btn:hover {
+      background: #ff8555;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+    }
+    
+    .error-btn.secondary {
+      background: transparent;
+      border: 2px solid #ff6b35;
+    }
+    
+    .error-btn.secondary:hover {
+      background: #ff6b35;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <div class="error-hero">🦸‍♂️</div>
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">Héros introuvable !</h2>
+    <p class="error-message">
+      Même nos super-héros les plus puissants n'ont pas réussi à localiser cette page. 
+      Elle a peut-être été sauvée par erreur ou déplacée dans une autre dimension.
+    </p>
+    <div>
+      <a href="/" class="error-btn">← Retour à l'accueil</a>
+      <a href="/#heros" class="error-btn secondary">Voir nos héros</a>
+    </div>
+  </div>
+</body>
+</html>
