@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://ton-site.com/sitemap.xml
+Sitemap: https://jonaydan.github.io/hero-league/sitemap.xml
 
 # Empêcher l'indexation des ressources
 Disallow: /ressources/
