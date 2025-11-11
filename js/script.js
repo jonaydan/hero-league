@@ -81,7 +81,9 @@ function createHeroCard(hero) {
     
     card.innerHTML = `
         <img src="${hero.image}" 
-             alt="${hero.name} - ${hero.description}" 
+             alt="Super-héros ${hero.name} - ${hero.description}" 
+             width="400"
+             height="500"
              itemprop="image"
              loading="lazy">
         <div class="hero-info">
